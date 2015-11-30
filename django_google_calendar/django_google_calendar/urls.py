@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.contrib.auth.decorators import login_required
+
+from core.views import Index, AuthHandler
 
 urlpatterns = [
+    url(r'^$', login_required(Index.as_view()), name='index'),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login',
+                            {'template_name': 'core/login.html'}),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^oauth2callback', login_required(AuthHandler.as_view)),
 ]
