@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
-<head></head>
-<body>
-<form method="post" >{% csrf_token %}
-login: {{ form.username }}
-passowrd: {{ form.password }}
+    <head></head>
+    <body>
+        <form method="post" >{% csrf_token %}
+            login: {{ form.username }}
+            passowrd: {{ form.password }}
 
-<input type="submit" value="login" />
-</form>
-</body>
+            <input type="submit" value="login" />
+        </form>
+    </body>
 </html>

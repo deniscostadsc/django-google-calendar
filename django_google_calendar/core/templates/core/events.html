@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+    <head></head>
+    <body>
+        {% for event in events.items %}
+            <pre>
+                {{ event | pprint}} 
+                <br><br>
+                *****************************************
+                <br><br>
+            </pre>
+        {% endfor %}
+        {{ events | pprint}}
+    </body>
+</html>
