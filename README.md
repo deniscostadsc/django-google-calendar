@@ -22,7 +22,7 @@
           }
         }
 
-## Items importantes
+## Items importantes do código
 
 - [Modelo que salva a credencial do usuário](
     https://github.com/deniscostadsc/django-google-calendar/blob/master/django_google_calendar/core/models.py#L7 
@@ -33,3 +33,9 @@
 - [View que autentica](
     https://github.com/deniscostadsc/django-google-calendar/blob/master/django_google_calendar/core/views.py#L56
     "View de autenticação")
+
+## Referências
+
+- [Referência da API do Google Calendar](
+    https://developers.google.com/google-apps/calendar/
+    "referencia da API do Calendar")
