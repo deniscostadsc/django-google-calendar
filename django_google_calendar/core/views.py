@@ -27,6 +27,12 @@ FLOW = flow_from_clientsecrets(
 
 
 class Index(View):
+    """"
+    Esta é a view que mostra os eventos do calendário do usuário.
+
+    Antes disso ela tenta pegar a credencial do usuário, se não existir, ela
+    encaminha para a url de autorização.
+    """
     def get(self, request):
         storage = Storage(CredentialsModel, 'id', request.user, 'credential')
         credential = storage.get()
@@ -48,6 +54,10 @@ class Index(View):
 
 
 class AuthHandler(View):
+    """
+    Esta é a view que o Google redireciona depois da página de autorização. Se
+    tudo estiver certo ele salva a nova credential e redireciona para o "/"
+    """
     def get(self, request):
         if not xsrfutil.validate_token(
                 settings.SECRET_KEY,

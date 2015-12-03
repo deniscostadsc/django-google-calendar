@@ -1,8 +1,7 @@
 from django.contrib import admin
 
-from core.models import FlowModel, CredentialsModel
+from core.models import CredentialsModel
 
 admin.register([
-    FlowModel,
     CredentialsModel
 ])

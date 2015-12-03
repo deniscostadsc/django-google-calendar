@@ -16,15 +16,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CredentialsModel',
             fields=[
-                ('id', models.ForeignKey(serialize=False, primary_key=True, to=settings.AUTH_USER_MODEL)),
+                ('id', models.ForeignKey(primary_key=True, to=settings.AUTH_USER_MODEL, serialize=False)),
                 ('credential', oauth2client.django_orm.CredentialsField(null=True)),
-            ],
-        ),
-        migrations.CreateModel(
-            name='FlowModel',
-            fields=[
-                ('id', models.ForeignKey(serialize=False, primary_key=True, to=settings.AUTH_USER_MODEL)),
-                ('flow', oauth2client.django_orm.FlowField(null=True)),
             ],
         ),
     ]
