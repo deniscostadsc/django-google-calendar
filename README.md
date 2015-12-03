@@ -8,15 +8,15 @@
 
 2. Preencha o arquivo com o secrets da aplicação.
 
-    {
-      "web": {
-        "client_id": [ CLIENT_ID ],
-        "client_secret": [ CLIENT_SECRET ],
-        "redirect_uris": [],
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://accounts.google.com/o/oauth2/token"
-      }
-    }
+        {
+          "web": {
+            "client_id": [ CLIENT_ID ],
+            "client_secret": [ CLIENT_SECRET ],
+            "redirect_uris": [],
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://accounts.google.com/o/oauth2/token"
+          }
+        }
 
 ## Items importantes
 
