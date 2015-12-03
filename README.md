@@ -6,7 +6,11 @@
     https://console.developers.google.com/
     "Console Google Developer")
 
-2. Preencha o arquivo com o secrets da aplicação.
+2. Configure uma URI de retorno. No caso dessa aplicação é:
+
+        http://localhost:8000/oauth2callback
+
+3. Preencha o arquivo com o secrets da aplicação.
 
         {
           "web": {
